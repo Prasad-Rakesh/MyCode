@@ -1,0 +1,33 @@
+# An interesting code in PYTHON that allows user to shop for fruits from your online shop.
+ 
+# It has 3 fruits and a limited quantity. it delivers if the quantity is less than or equal to available stock. Else, it prints out a medsage of non availabity of the wuantity ordered.
+
+qty_apple = 10
+qty_orange = 20
+qty_grapes = 25
+
+fruit = input ("Which fruit do you want? (Apple/Orange/Grapes)").lower()
+
+
+qty_fruit = int (input("How much you want? "))
+
+
+if fruit =='apple' and qty_fruit <= qty_apple or  fruit =='orange' and qty_fruit <= qty_orange or fruit == 'grapes' and qty_fruit <= qty_grapes :
+
+    print()   
+    print()
+    print ("You have ordered", qty_fruit, fruit)
+
+    print()  
+    print ("Your favorite fruit is available. Here, enjoy your " + fruit )
+
+
+
+if qty_fruit > qty_apple or qty_fruit > qty_orange or qty_fruit > qty_grapes :
+
+    print()
+    print()
+    print ("You have ordered", qty_fruit, fruit)
+    print()
+    print ("The quantity of " + fruit + " not available.")
+
